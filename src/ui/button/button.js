@@ -1,13 +1,13 @@
-
-
 import React from "react";
 
-function Button ({ type, classname, onClick, children }) {
+import styles from './button.module.css';
+
+function Button ({ type, onClick, children }) {
   return (
-  <button type={type} classname={classname} onClick={onClick}>
+  <button type={type} className={styles['button']} onClick={onClick}>
     {children}
     </button>
   )
 }
 
-export {Button}
+export {Button};
