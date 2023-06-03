@@ -1,10 +1,10 @@
 import React from "react";
-
+import cx from 'clsx';
 import styles from './button.module.css';
 
-function Button ({ type, onClick, children }) {
+function Button ({ type, className, onClick, children }) {
   return (
-  <button type={type} className={styles['button']} onClick={onClick}>
+  <button type={type} className={cx(styles['button'], className)} onClick={onClick}>
     {children}
     </button>
   )
