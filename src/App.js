@@ -2,7 +2,7 @@ import React from "react";
 
 import { Button } from "./ui/button";
 import { Checkbox } from "./ui/checkbox";
-
+import { Input } from "./ui/input";
 
 import './App.css';
 
@@ -13,6 +13,7 @@ function App() {
         <span>Button</span>
       </Button>
       <Checkbox></Checkbox>
+      <Input></Input>
     </div>
   );
 }
